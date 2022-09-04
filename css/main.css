@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -326,7 +327,8 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Livvic", sans-serif;
+  background-image: linear-gradient(to right, rgb(230, 128, 220), rgb(230, 230, 103));
   font-size: 16px;
   line-height: 1.5;
 }
@@ -353,4 +355,27 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.form-box {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.link {
+  width: 150px;
+  display: block;
+  margin: 25px auto;
+}
+
+.js-answer {
+  text-align: center;
+  margin-top: 25px;
 }/*# sourceMappingURL=main.css.map */

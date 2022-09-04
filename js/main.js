@@ -1,10 +1,15 @@
 var elAnswer = document.querySelector(".js-answer");
+var elForm = document.querySelector(".site-form");
 var elInputNumber = document.querySelector("#exampleInputNumber");
 var elBtn = document.querySelector(".btn");
-elBtn.addEventListener("click", function(e){
+
+
+elForm.addEventListener("submit", function(e){
     e.preventDefault();
     var elInputNumberValue = elInputNumber.value;
-    if (elInputNumberValue % 3 === 0 && elInputNumberValue % 5 === 0) {
+    if (elInputNumberValue === "") {
+        elAnswer.textContent = "Raqam kiriting";
+    } else if (elInputNumberValue % 3 === 0 && elInputNumberValue % 5 === 0) {
         elAnswer.textContent = "FizzBuzz";
     } else if (elInputNumberValue % 3 === 0){
         elAnswer.textContent = "Fizz";
